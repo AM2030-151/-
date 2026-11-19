@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f3f5ef;
+    color: #173d30;
+    text-align: center;
+}
+
+header {
+    background: #174b38;
+    color: #e9d39a;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+header p {
+    color: white;
+}
+
+nav {
+    margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background: #174b38;
+    color: white;
+    border: 2px solid #d5b76b;
+    padding: 13px 20px;
+    margin: 5px;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #28664c;
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: default;
+}
+
+.section {
+    background: #fff;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #0001;
+}
+
+.section[hidden] {
+    display: none;
+}
+
+#count {
+    font-size: 55px;
+    font-weight: bold;
+    color: #174b38;
+    margin: 25px;
+}
+
+#quranArea {
+    background: #f8f0dc;
+    border: 4px double #b99a53;
+}
+
+#surahSelect {
+    font-size: 18px;
+    padding: 12px;
+    border: 2px solid #b99a53;
+    border-radius: 8px;
+}
+
+#quranText {
+    direction: rtl;
+    text-align: justify;
+    line-height: 2.5;
+    padding: 20px;
+    color: #29251c;
+    font-family: "Traditional Arabic", "Times New Roman", serif;
+    font-size: 30px;
+}
+
+#quranText p {
+    display: inline;
+    font-size: 30px;
+    line-height: 2.5;
+}
+
+.azkar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.azkar-card {
+    background: #f8f0dc;
+    border: 1px solid #b99a53;
+    border-radius: 13px;
+    padding: 20px;
+    margin: 18px 0;
+}
+
+.azkar-text {
+    font-size: 23px;
+    line-height: 2;
+    color: #173d30;
+}
+
+.azkar-counter {
+    color: #765c27;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.azkar-done {
+    color: #17643d;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 35px;
+    color: #547064;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .azkar-text {
+        font-size: 21px;
+    }
+
+    #quranText,
+    #quranText p {
+        font-size: 25px;
+    }
+}

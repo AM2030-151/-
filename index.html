@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التطبيق الإسلامي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>التطبيق الإسلامي 🌙</h1>
+        <p>اجعل لسانك عامراً بذكر الله</p>
+    </header>
+
+    <nav>
+        <button onclick="showSection('quran')">القرآن الكريم</button>
+        <button onclick="showSection('azkar')">الأذكار</button>
+        <button onclick="showSection('tasbeeh')">المسبحة الإلكترونية</button>
+        <button onclick="showSection('dua')">الأدعية</button>
+    </nav>
+
+    <!-- القرآن الكريم -->
+
+    <section id="quranArea" class="section" hidden>
+        <h2>القرآن الكريم</h2>
+        <p>اختر السورة التي تريد قراءتها</p>
+
+        <select id="surahSelect">
+            <option value="">اختر السورة</option>
+        </select>
+
+        <p id="quranStatus"></p>
+        <div id="quranText"></div>
+    </section>
+
+    <!-- المسبحة -->
+
+    <section id="tasbeehArea" class="section" hidden>
+        <h2>المسبحة الإلكترونية</h2>
+        <p>سبّح واحمد الله</p>
+
+        <div id="count">0</div>
+
+        <button onclick="increase()">سبّح</button>
+        <button onclick="resetCount()">إعادة العداد</button>
+    </section>
+
+    <!-- الأذكار -->
+
+    <section id="azkarArea" class="section" hidden>
+        <h2>الأذكار اليومية</h2>
+
+        <div class="azkar-menu">
+            <button onclick="showAzkar('morning')">أذكار الصباح</button>
+            <button onclick="showAzkar('evening')">أذكار المساء</button>
+            <button onclick="showAzkar('sleep')">أذكار النوم</button>
+            <button onclick="showAzkar('wake')">أذكار الاستيقاظ</button>
+        </div>
+
+        <h3 id="azkarTitle"></h3>
+        <div id="azkarList"></div>
+    </section>
+
+    <!-- الأدعية -->
+
+    <section id="duaArea" class="section" hidden>
+        <h2>الأدعية</h2>
+        <p>قريباً بإذن الله</p>
+    </section>
+
+    <footer>
+        <p>اللهم اجعل هذا العمل خالصاً لوجهك الكريم</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
